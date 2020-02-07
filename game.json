@@ -1,20 +1,353 @@
 {
 	"START": {
-		"name": "",
-		"desc": "",
+		"name": "Crashsite",
+		"desc": "You awaken in a pile of soot and ash as jagged steel has piereced the ground all around you. All you can remember last is the sounds of sirens and blasterfire on a Federation fleet ship that you serve upon. Rather, had served upon. You had been caught off guard while patrolling a barren system, if you truly crashed there then that means... no civlization, no help, no mayday reciever. With these sombering thoughts you resolve yourself that maybe you should look for other survivors, if they are anyn on this uncivilized rock.",
 		"exits": [
 			{
-				"exit": "EXIT1",
-				"target": "LOCATION2"
+				"exit": "NORTH",
+				"target": "FORES"
+			},{
+				"exit": "SOUTH",
+				"target": "CAVES"
+			},{
+				"exit": "WEST",
+				"target": "RIVER"
+			},{
+				"exit": "EAST",
+				"target": "WALLF"
 			}
 		]
 	}
-	,"LOCATION2": {
-		"name": "",
-		"desc": "",
+	,"FORES": {
+		"name": "The White Forest",
+		"desc": "A peculiar forest, surrounded by thick folliage. Peculiar in that there is a low hanging fog, obscuring your vision even further. You seem to make out what looks like red eyes partially visable in the fog, staring at you... It might be quite easy to lose you way in here. Do you dare venture further ahead?",
 		"exits": [
 			{
-				"exit": "EXIT1",
+				"exit": "SOUTH",
+				"target": "STAR1"
+			},{
+				"exit": "EAST",
+				"target": "FORER"
+			},{
+				"exit": "WEST",
+				"target": "FOREL"
+			}
+		]
+	}
+	,"RIVER": {
+		"name": "A River",
+		"desc": "Wisely you head west, to find a river flowing downstream away from your crashsite. It is always best to find water in any survival situation. That's standard Federation protocol. If there are other Federation survivors maybe they will have followed protocol and have gone to find water themselves.",
+		"exits": [
+			{
+				"exit": "EAST",
+				"target": "STAR1"
+			},{
+				"exit": "NORTH",
+				"target": "URIVE"
+			},{
+				"exit": "SOUTH",
+				"target": "DRIVE"
+			}
+		]
+	}
+	,"CAVES": {
+		"name": "A natural cave system",
+		"desc": "Before you lies multiple entrances to what appears to be a large natural cave system. While there are many you could enter, you can only find two which are currently accesible to you.",
+		"exits": [
+			{
+				"exit": "NORTH",
+				"target": "STAR1"
+			},{
+				"exit": "EAST",
+				"target": "CAVER"
+			},{
+				"exit": "WEST",
+				"target": "CAVEL"
+			}
+		]
+	}
+	,"CAVER": {
+		"name": "Right Cave",
+		"desc": "Having gone right, you aren't too sure about that other cave. IT's smell just wasn't quite right. No, your gut was telling you that right was certainly the right option. However before you there is two more entrances that lead further into cave. In one seems to be a glow of something faintly while in the other your gut tells you something more sinister awaits.",
+		"exits": [
+			{
+				"exit": "SOUTH",
+				"target": "CAVES"
+			},{
+				"exit": "WEST",
+				"target": "FAILU"
+			},{
+				"exit": "EAST",
+				"target": "SUCCE"
+			}
+		]
+	}
+	,"CAVEL": {
+		"name": "Left Cave",
+		"desc": "Having gone left, there was something with the right cave that did not jive with your non-exsitent lunch. Your gut just couldn't agree that going right was the right option, so left it is. However before you there is two more entrances that lead further into cave. In one seems to be a glow of something faintly while in the other your gut tells you something more sinister awaits.",
+		"exits": [
+			{
+				"exit": "SOUTH",
+				"target": "CAVES"
+			},{
+				"exit": "EAST",
+				"target": "FAILU"
+			},{
+				"exit": "WEST",
+				"target": "SUCCE"
+			}
+		]
+	}
+	,"SUCCE": {
+		"name": "Success",
+		"desc": "You have chosen the right path. The faint glow was that of a campfire of your fellow Federation soldier, now you will no longer be alone in this barren wasteland. Thank God... (You have reached Ending 1 of 6. Please put END1 to continue the ending or please enter RESTA to restart your adventure.)",
+		"exits": [
+			{
+				"exit": "END",
+				"target": "END1"
+			},{
+				"exit": "RESTA",
+				"target": "START"
+			}
+		]
+	}
+	,"FAILU": {
+		"name": "Failure!",
+		"desc": "You have chosen the wrong path. The very wrong path, there will be no escape from here. You find that out all too late when your hit over the head with something blunt, knocking you unconcious... (You have reached Ending 2 of 6. Please enter END2 to continue your story or please enter RESTA to restart your adventure.)",
+		"exits": [
+			{
+				"exit": "END2",
+				"target": "END2"
+			},{
+				"exit": "RESTA",
+				"target": "START"
+			}
+		]
+	}
+	,"FORER": {
+		"name": "Right Path",
+		"desc": "You push throw the flora and trees that seem to almost encapsulate you. Almost. However this path does not seem to be much better then your trek previously. You're not sure if you can believe your eyes but the shadows seem to be closing in... Maybe it's time to head back. ",
+		"exits": [
+			{
+				"exit": "EAST",
+				"target": "ANIMA"
+			},{
+				"exit": "WEST",
+				"target": "FORES"
+			}
+		]
+	},"URIVE": {
+		"name": "Up River",
+		"desc": "The river seems to grow narrower as you grow further North from your entry point. This may not be the best path to continue on if the landscape continues growing barren. The less life to life on, the more brutal the predators...",
+		"exits": [
+			{
+				"exit": "SOUTH",
+				"target": "RIVER"
+			},{
+				"exit": "NORTH",
+				"target": "RIVEC"
+			}
+		]
+	}
+	,"DRIVE": {
+		"name": "Down River",
+		"desc": "You decide to head South and follow down river. What type of idiot goes against the flow of water? Rebels, that's who. You can either continue down river further or head back from here.",
+		"exits": [
+			{
+				"exit": "NORTH",
+				"target": "RIVER"
+			},{
+				"exit": "SOUTH",
+				"target": "RRIVE"
+			}
+		]
+	}
+	,"RIVEC": {
+		"name": "Outside the Camp",
+		"desc": "You knew you should have turned back. There is a rebel camp just ahead at the base of the river. Why they have just covered their enter camp in flags, the sight of which disgust you. There's nothing that you can seem to do here except to charge ahead for the Glory of the Federation. That is, if you want to...",
+		"exits": [
+			{
+				"exit": "SOUTH",
+				"target": "URIVE"
+			},{
+				"exit": "NORTH",
+				"target": "CRIVE"
+			}
+		]
+	}
+	,"CRIVE": {
+		"name": "Federation Camp",
+		"desc": "You charge gallantly ahead, ready to die anytime for your benevolent overlords, however confusion soon finds you as you are no longer charging to your death but rather towards some comrades. Federation soldiers? Then that means this was a trap set for rebels. Luckily for you, your loyalty has saved you for the time being. (You have reached Ending 6 of 6. To continue your fate type in END6, otherwise type in RESTA to restart.)",
+		"exits": [
+			{
+				"exit": "END6",
+				"target": "END6"
+			},{
+				"exit": "SOUTH",
+				"target": "RIVEC"
+			}
+		]
+	}
+	,"END1": {
+		"name": "Ending 1 of 6",
+		"desc": "You and your newfound friend are eventually found by more fellow Federation soldiers after holing up in the cave for a few weeks. Hearing the random raving of some other creature in other parts of the cave discoruaged you from exploring, but luckily for you, your fellow Federation soldiers have got a Comms Console working. Soon you'll all be picked up off this rock, and you even get a new friend for life! Not bad. (Please type in END to END)",
+		"exits": [
+			{
+				"exit": "END",
+				"target": "END"
+			}
+		]
+	}
+	,"END2": {
+		"name": "Ending 2 of 6",
+		"desc": "You awake to your head pounding, but that seems to be all you can feel as your arms and legs are gone! It seems you aren't the first person to crash on this rock, but this other survivor seems to be a cannibal. Noticing you are awake, this monster of a man smiles at you as he puts a finger up to his lips and motions you to stay quiet as he stires parts of your limbs in a wooden pot. You are afraid of what he'll you do if you make more noise, but you are more afraid of what he'll do if you don't. Either way, without any means for escape, it seems you fate is sealed. (Please type in END to END)",
+		"exits": [
+			{
+				"exit": "END",
+				"target": "END"
+			}
+		]
+	}
+	,"END3": {
+		"name": "Ending 3 of 6",
+		"desc": "It didn't take long for the apes to beat you senseless as they teared you limb from limb. Flesh and sinew ripped from their sockets as you fade out of conciousness. These apes showed no mercy, however neither did you. Your body gave them quite the stomachache. (Please type in END to END)",
+		"exits": [
+			{
+				"exit": "END",
+				"target": "END"
+			}
+		]
+	}	
+	,"END4": {
+		"name": "Ending 4 of 6",
+		"desc": "The Federation soldiers seem to have been trapped by these monstrous apes that have randomly appeared. You soon lose hope that you'll ever leave this forest, especially as you fainyl see ships come into orbit. Unfortuantely trapped where you are, there is no way of getting their attention. This depresses you at first, however as the weeks and months go by you and your comrades grow accostomed to life in this harsh envrioment. As you adapt, you start to thrive, and as you thrive you start to build. Years later, a small thriving jungle treibe has been formed. Maybe one day this rock won't be uncivlized no more... (Please enter END to END.)",
+		"exits": [
+			{
+				"exit": "END",
+				"target": "END"
+			}
+		]
+	}
+	,"END5": {
+		"name": "Ending 5 of 6",
+		"desc": "You awake to find searing pain rushing to meet you. Your nerves on fire, your body slathered in your own blood. You do not know why you are still alive until you finally gain the strength to open your eyes. Oh. You have been strung up on a makeshift cross, surrounded by your fellow federation soldiers who fell into the same trap. It seems you are to be made an example, to be treated like the scum you serve. A fitting end you suppose, or it would be if you could just stop screaming. (Please type in END to continue)",
+		"exits": [
+			{
+				"exit": "END",
+				"target": "END"
+			}
+		]
+	}
+	,"END6": {
+		"name": "Ending 6 of 6",
+		"desc": "Months later you have adapted to the life on this rock, but luckily it won't have to be for long. You and your fellow federation soldiers juryrig a Communications array from a downed ship, allowing for a powerful mayday message to break through the system. You recieve a response, soon help will arrive, and now after months of roughing it out here in the boonies you're finally safe. (Please type in END to continue)",
+		"exits": [
+			{
+				"exit": "END",
+				"target": "END"
+			}
+		]
+	}
+	,"END": {
+		"name": "The END",
+		"desc": "Thanks for playing my short little text adventure. One way or another you have met your end, either for now, or permanently. If you'd like to try again please put type in RESTA.",
+		"exits": [
+			{
+				"exit": "RESTA",
+				"target": "START"
+			}
+		]
+	}
+	,"WALLF": {
+		"name": "Giant Cliff Face",
+		"desc": "You head East to find there is a humongous cliff face to face you, hehe. It seemed your pod has landed right in front of where the drop off was... lucky you. There are no ways forward, only backwards.",
+		"exits": [
+			{
+				"exit": "WEST",
+				"target": "STAR11"
+			}
+		]
+	}
+	,"STAR1": {
+		"name": "Crashsite",
+		"desc": "You have returned to the pile of rubble that was once your escape pod. Nothing of note seems to have changed, except the small flames from the crash in the surrounding landscape have been extinguished.",
+		"exits": [
+			{
+				"exit": "NORTH",
+				"target": "FORES"
+			},{
+				"exit": "SOUTH",
+				"target": "CAVES"
+			},{
+				"exit": "WEST",
+				"target": "RIVER"
+			},{
+				"exit": "EAST",
+				"target": "WALLF"
+			}
+		]
+	}
+	,"FOREL": {
+		"name": "Salvation or Desolation?",
+		"desc": "You head to the left of the entrance you came in. The faint hollering and distant red eyes seem to be growing closer. Perhaps it was mistake to enter here. Your only options now are to press on, or to meet your coming fate head on.",
+		"exits": [
+			{
+				"exit": "EAST",
+				"target": "ANIMA"
+			},{
+				"exit": "WEST",
+				"target": "FCAMP"
+			}
+		]
+	}
+	,"RRIVE": {
+		"name": "Outside the Camp",
+		"desc": "After heading further down river you find that there is a small camp of people ahead. Upon closer inspection there seems to be Federation flags hung everywhere. finally, your fellow people, just a bit further down the river!",
+		"exits": [
+			{
+				"exit": "SOUTH",
+				"target": "BRIVE"
+			}, {
+				"exit": "NORTH",
+				"target": "DRIVE"
+			}
+		]
+	}
+	,"BRIVE": {
+		"name": "Rebellion Camp",
+		"desc": "It turns out the Federation flags were a trap! Clever little snakes. You try to run away as you realize your folly but there is no chance of escape as your surrounded. Soon your world is nothing but pain as you get shot in the leg. Leaving you no hope for the Future. (You have reached Ending 5 of 6, please enter END5 to continue your fate, or RESTA to restart your adventure.)",
+		"exits": [
+			{
+				"exit": "END5",
+				"target": "END5"
+			},{
+				"exit": "RESTA",
+				"target": "START"
+			}
+		]
+	}
+	,"FCAMP": {
+		"name": "Forest Camp",
+		"desc": "Eureka! Humans! Life! Something in this damned forest that doesn't want to kill you! You find a large body of armed Federation soldiers ready to save your life. All's good, for now. (You have reached Ending 4 of 6. To continue your fate type in END4, otherwise type in RESTA to restart your adevnture.",
+		"exits": [
+			{
+				"exit": "END4",
+				"target": "END4"
+			},{
+				"exit": "RESTA",
+				"target": "START"
+			}
+		]
+	}
+	,"ANIMA": {
+		"name": "Uh oh.",
+		"desc": "It seems those red eyes just weren't for show. You should have been more cautious! You try to escape as you are quickly surrounded by burly albino apes, and from the looks of the teeth your future does not seem as bright as their pearly whites. (You have reache Ending 3 of 6. To continue your fate type in END3, otherwise type in RESTA to restart your adventure.)",
+		"exits": [
+			{
+				"exit": "END3",
+				"target": "END3"
+			},{
+				"exit": "RESTA",
 				"target": "START"
 			}
 		]
