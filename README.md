@@ -9,4 +9,4 @@ Going off cardinal directions they will be way your way to navigate everywhere. 
 Slight Intro:
 You play the role of a Federation lackey who has crash landed on a barren planet (as in no sentient life) on the edge of the galaxy after getting caught in a fight between you and your mortal enemy: the Rebels. No real combat experience, no real survival experince. Seemingly only surviving through your keen eyes and wit. Or rather, maybe not.
 
-I seem to have forgotten to have sent my push to the master on GitHub. It should now correctly have pushed the commit through the desktop. This came in late as I thought it had turned in before sending it in on canvas. I only noticed just before I closed GitHub. I hope you can forgive this mistake.
+I seem to have forgotten to have sent my push to the master on GitHub. It should now correctly have pushed the commit through the desktop. This came in late as I thought it had turned in before sending it in on canvas. I only noticed just before I closed GitHub. I hope you can forgive this mistake. I did miss the original deadline but made the deadline of 1 day after due date instead of two days, if I had committed originally. 
